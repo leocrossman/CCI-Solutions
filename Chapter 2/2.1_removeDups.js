@@ -5,7 +5,6 @@ FOLLOW UP
 How would you solve this problem if a temporary buffer is not allowed?
 */
 
-// remiveDups redone
 const LinkedList = require("./util/LinkedListX");
 
 const removeDuplicates = (list) => {
