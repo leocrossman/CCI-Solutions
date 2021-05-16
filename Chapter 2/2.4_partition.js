@@ -6,11 +6,36 @@ than x. The partition element x can appear anywhere in the "right partition";
 it does not need to appear between the left and right partitions.
 */
 
-const LinkedList = require('./util/LinkedListX')
+const {Node} = require('./util/LinkedListX')
 const printList = require('./util/printList')
 
-const partition = (head, partition) => {
-    return
+const partition = (node, partition) => {
+    let head = node
+    let tail = node
+
+    while (node) {
+        let next = node.next
+        if (node.value < partition) {
+            node.next = head
+            head = node
+        } else {
+            tail.next = node
+            tail = node
+        }
+
+        node = next
+    }
+    tail.next = null
+
+    return head
 }
 
-// will come back to this one
+let n1 = new Node(3)
+n1.next = new Node(5)
+n1.next.next = new Node(8)
+n1.next.next.next = new Node(5)
+n1.next.next.next.next = new Node(10)
+n1.next.next.next.next.next = new Node(2)
+n1.next.next.next.next.next.next = new Node(1)
+
+printList(partition(n1,5))
