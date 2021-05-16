@@ -125,20 +125,20 @@ class LinkedList {
     }
 }
 
-module.exports = LinkedList
+module.exports = {LinkedList, Node}
 
   /* TEST */
-  
+
   // let l = new LinkedList();
   // l.append(3);
   // l.append(4);
   // l.append(10);
   // l.append(20);
   // l.append(5);
-  
+
   // console.log(l.removeAt(1), 4);
   // console.log(l.pop().value, 5);
-  
+
   // console.log(l._toArray());
   // l.insertAt(2, 40);
   // console.log(l._toArray());
