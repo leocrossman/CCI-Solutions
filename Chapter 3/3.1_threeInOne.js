@@ -44,5 +44,4 @@ class TripleStack {
     isEmpty(stackNum) {
         return this._getLength(stackNum) === 0
     }
-
 }
