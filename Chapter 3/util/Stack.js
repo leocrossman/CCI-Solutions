@@ -19,7 +19,7 @@ class Stack {
     }
 
     isEmpty() {
-      return this.size() == 0;
+      return this.size() === 0;
     }
 
     push(value) {
