@@ -1,5 +1,5 @@
 // implement a queue using linkedLists
-var LinkedList = require('./LinkedList');
+var {LinkedList} = require('./LinkedList');
 
 class Queue {
   constructor() {
