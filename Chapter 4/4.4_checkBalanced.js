@@ -1,4 +1,3 @@
-const { ninvoke } = require('q');
 var BST = require('./util/BST');
 var {LinkedList} = require('./util/LinkedList');
 var Queue = require('./util/Queue');
